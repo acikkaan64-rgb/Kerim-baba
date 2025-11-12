@@ -1,22 +1,18 @@
-
 <!DOCTYPE html>
 <html>
-  <link rel="stylesheet" href="style.css">
 <head>
-  <title>Kerim baba'nın sitesi</title>
+  <title>Kerim Baba Sitesi</title>
 </head>
 <body>
-  <h1>Merhaba Kerim baba!</h1>
-  <p>Bu benim ilk sitem.</p>
-  <button onclick="playSound()">Tıkla ve Ses Çıkar</button>
-<audio id="mySound">
-  <source src="https://www.soundjay.com/button/beep-10.mp3" type="audio/mpeg">
-</audio>
-<script>
-function playSound() {
-  var sound = document.getElementById("mySound");
-  sound.play();
-}
-</script>
+  <!-- Başlık -->
+  <h1>Kerim Baba'nın Sitesi</h1>
+
+  <!-- Tır Kornası Ses Butonu -->
+  <audio id="korna" src="https://raw.githubusercontent.com/acikkaan64/Kerim-baba/main/car-horn-honking-413906.mp3"></audio>
+
+  <button onclick="document.getElementById('korna').play()"
+  style="padding:12px 25px; background-color:#ff4500; color:white; border:none; border-radius:8px; font-size:16px; cursor:pointer;">
+  Tıkla ve Kornayı Çal!
+  </button>
 </body>
 </html>
